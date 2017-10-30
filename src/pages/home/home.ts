@@ -34,6 +34,11 @@ export class HomePage {
       console.error( error );
     });
   }
+  logout() {
+    this.facebook.logout()
+      .then( res => this.showUser = true)
+      .catch(e => console.log('Error logout from Facebook', e));
+  }
 
   getInfo(){
     this.facebook.api('/me?fields=id,name,email,first_name,picture,last_name,gender',['public_profile','email'])

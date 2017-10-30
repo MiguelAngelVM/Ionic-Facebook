@@ -86,4 +86,5 @@
         <variable name="APP_ID" value="126959957968741" />
         <variable name="APP_NAME" value="Punto Bahia" />
     </plugin>
+    <plugin name="cordova-plugin-console" spec="^1.1.0" />
 </widget>
